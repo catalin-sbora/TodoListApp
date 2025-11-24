@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearCompletedBtn = document.getElementById('clearCompleted');
     const clearAllBtn = document.getElementById('clearAll');
     const dateDisplay = document.getElementById('dateDisplay');
+    const mySecretPassword="MyS3cr3tP@ssw0rd!";
 
     // Set current date
     const options = { weekday: 'long', month: 'short', day: 'numeric' };
