@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1>Tasks</h1>
+            <p class="date-display" id="dateDisplay">Monday, Nov 24</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="todoInput" maxlength="255" placeholder="Add a new task..." autocomplete="off">
+            <button id="addBtn" aria-label="Add Task">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="todo-stats">
+            <span id="itemsLeft">0 items left</span>
+            <button id="clearCompleted" class="text-btn">Clear Completed</button>
+            <button id="clearAll" class="text-btn" style="margin-left: 10px;">Clear All</button>
+        </div>
+
+        <ul class="todo-list" id="todoList">
+            <!-- Items will be added here via JS -->
+        </ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
